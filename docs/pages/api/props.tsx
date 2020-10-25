@@ -31,7 +31,7 @@ const Docs: React.FC<WithRouterProps> = ({ router }) => {
       <PageMeta title={title} description={description} />
       <Grid container justifyContent="space-between" alignItems="center">
         <Grid item md={6} className={classes.title}>
-          <h3>{title}</h3>
+          <h1>{title}</h1>
           <p>{description}</p>
           <Ad />
         </Grid>
@@ -39,27 +39,10 @@ const Docs: React.FC<WithRouterProps> = ({ router }) => {
           <KawaiiIcon className={classes.kawaiiIcon} size={220} />
         </Grid>
       </Grid>
-      <h4> Import </h4>
+      <h2> Import </h2>
       <Code language="jsx">{`import { ${componentName} } from '@material-ui/pickers'`}</Code>
-      <Typography gutterBottom>
-        <code>DateIOType</code> — date object type of your linked date-io adapter (Moment, DayJS,
-        etc.)
-      </Typography>
+
       <PropTypesTable src={componentName} />
-      {!internalComponents.includes(componentName) && (
-        <React.Fragment>
-          <h4> Mobile Wrapper </h4>
-          <Typography gutterBottom>
-            Props available on mobile device with {componentName} or with `Mobile{componentName}`
-          </Typography>
-          <PropTypesTable disableHeader src="MobileWrapper" />
-          <h4> Desktop Wrapper </h4>
-          <Typography gutterBottom>
-            Props available on desktop device with `{componentName}` or with `Mobile{componentName}`
-          </Typography>
-          <PropTypesTable disableHeader src="DesktopWrapper" />
-        </React.Fragment>
-      )}
     </React.Fragment>
   );
 };

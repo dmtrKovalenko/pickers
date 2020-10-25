@@ -5,7 +5,6 @@ import cookies from 'next-cookies';
 // @ts-ignore
 import flush from 'styled-jsx/server';
 import Document, { Head, Main, NextScript, NextDocumentContext } from 'next/document';
-import { prismThemes } from '../utils/prism';
 import { ThemeType } from 'layout/PageWithContext';
 import { PageContext } from '../utils/getPageContext';
 
@@ -62,7 +61,10 @@ class MyDocument extends Document<{ theme?: ThemeType }> {
             rel="stylesheet"
             href="https://fonts.googleapis.com/css?family=Roboto:300,400,500"
           />
-          <link data-prism="true" href={prismThemes[theme]} rel="stylesheet" />
+          <link
+            href="https://unpkg.com/prism-theme-night-owl@1.4.0/build/style.css"
+            rel="stylesheet"
+          />
           <meta name="theme-color" content="#3da044" />
           <link rel="manifest" href="/static/manifest.json" />
           <link rel="apple-touch-icon" sizes="57x57" href="/static/apple-icon-57x57.png" />

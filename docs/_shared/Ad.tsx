@@ -49,6 +49,7 @@ const useStyles = makeStyles((theme) => ({
 
 const Ad: React.FC = () => {
   useStyles();
+  return null;
 
   React.useEffect(() => {
     // @ts-expect-error Need to extend window

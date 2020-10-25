@@ -4,6 +4,7 @@ import NavigationMenu from './NavigationMenu';
 import { version } from '@material-ui/pickers/package.json';
 import { Divider, Toolbar, Typography, Theme } from '@material-ui/core';
 import { createStyles, withStyles, WithStyles } from '@material-ui/core/styles';
+import LogoSmall from '_shared/svgIcons/LogoSmall';
 
 const styles = (theme: Theme) =>
   createStyles({
@@ -30,11 +31,13 @@ const styles = (theme: Theme) =>
 const DrawerMenu: React.SFC<WithStyles<typeof styles>> = ({ classes }) => (
   <div className={classes.drawerRoot}>
     <Toolbar className={classes.drawerToolbar}>
-      <Link prefetch href="/">
-        <Typography variant="subtitle1" className={classes.headerLink}>
-          Material-UI pickers
-        </Typography>
+      <Link href="/">
+        <a className="flex title-font focus:outline-none font-medium items-center text-gray-900 mb-2 mt-2">
+          <LogoSmall />
+          <span className="ml-3 text-xl">pickers</span>
+        </a>
       </Link>
+
       <Link href="/releases">
         <Typography variant="caption" color="textPrimary" className={classes.headerLink}>
           v{version}

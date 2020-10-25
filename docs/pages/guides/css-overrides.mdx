@@ -7,20 +7,20 @@ import * as CssThemeSpacing from './CssThemeSpacing.example';
 
 <PageMeta title="CSS Overrides" />
 
-## Override styles
+# Override styles
 
 The default pickers appearance is built based on material-ui's theme provided. So pickers will take all
 colors/fonts/theme settings as any other material-ui component.
 
 <Ad />
 
-#### Default theme
+## Default theme
 
 You can customize the material-ui theme, that is passed to `ThemeProvider` and the pickers will leverage your settings.
 
 <Example testId="css-override" source={CssTheme} />
 
-#### Override example
+## Override example
 
 _Date/Time pickers are quite simple controls from UX perspective, so most people just use the default appearance_
 
@@ -30,13 +30,13 @@ overrides.
 
 <Example source={CssOverrides} />
 
-#### Custom spacing
+## Custom spacing
 
 Pickers will also leverage `spacing` from the material-ui's theme
 
 <Example source={CssThemeSpacing} />
 
-#### TypeScript
+## TypeScript
 
 For TypeScript users it's also required to extend default material-ui theme typings with pickers controls.
 This will also autocomplete classnames.

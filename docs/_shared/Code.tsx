@@ -5,29 +5,26 @@ import { makeStyles } from '@material-ui/core';
 
 const useStyles = makeStyles((theme) => ({
   root: {
-    margin: 0,
     fontFamily: theme.typography.fontFamily,
     fontSize: '1em',
     color: theme.palette.text.primary,
-    padding: 5,
-    backgroundColor: theme.palette.background.paper,
-
+    overflowY: 'scroll',
+    backgroundColor: '#011627',
+    borderTopLeftRadius: 4,
+    borderTopRightRadius: 4,
     '& pre': {
-      borderRadius: 3,
-      overflow: 'auto !important',
-      margin: '0 !important',
-      backgroundColor: theme.palette.background.paper + ' !important',
+      padding: 0,
+      margin: '16px !important',
     },
   },
   inlineRoot: {
-    padding: 0,
+    background: 'transparent',
     '& pre': {
-      padding: 0,
-    },
+      background: 'transparent',
+    }
   },
   inlineCode: {
     fontSize: 14,
-    // color: theme.palette.secondary.main,
     whiteSpace: 'pre-wrap',
   },
   margin: {
@@ -38,25 +35,27 @@ const useStyles = makeStyles((theme) => ({
 interface CodeProps {
   children: string;
   inline?: boolean;
-  withMargin?: boolean;
+  noMargin?: boolean;
   language?: 'jsx' | 'typescript' | 'markup';
 }
 
-const Code: React.FC<CodeProps> = ({ language = 'typescript', inline, children, withMargin }) => {
+const Code: React.FC<CodeProps> = ({ language = 'typescript', inline, children, noMargin }) => {
   const classes = useStyles();
   const highlightedCode = highlight(children, language);
 
   return (
     <div
       className={clsx(classes.root, {
-        [classes.margin]: withMargin,
-        [classes.inlineRoot]: inline,
+        [classes.margin]: noMargin,
+        [classes.inlineRoot]: inline
       })}
     >
       <pre>
         <code
-          className={clsx({ [classes.inlineCode]: inline })}
           dangerouslySetInnerHTML={{ __html: highlightedCode }}
+          className={clsx({
+            [classes.inlineCode]: inline,
+          })}
         />
       </pre>
     </div>
@@ -64,7 +63,7 @@ const Code: React.FC<CodeProps> = ({ language = 'typescript', inline, children, 
 };
 
 Code.defaultProps = {
-  withMargin: false,
+  noMargin: false,
   language: 'jsx',
 };
 

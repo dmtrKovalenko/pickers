@@ -13,7 +13,7 @@ import * as CustomRangeInputs from './CustomRangeInputs.example';
 
 <PageMeta component="DateRangePicker" />
 
-## Date range picker
+# Date range picker
 
 > ⚠️⚠️ The date range picker is unstable, it's **not suitable** for usage in production. ⚠️⚠️
 
@@ -24,13 +24,13 @@ The [date range pickers](https://material.io/components/pickers/) let users sele
 
 <Ad />
 
-#### Basic usage
+## Basic usage
 
 Basic DateRangePicker example, make sure that you can pass almost any prop of [DatePicker]('/api/DatePicker')
 
 <Example source={BasicDateRangePicker} />
 
-#### Responsiveness
+## Responsiveness
 
 The date range picker component is designed and optimized for the device it runs on.
 
@@ -42,26 +42,26 @@ This can be customized by `desktopModeMediaQuery` prop.
 
 <Example source={ResponsiveDateRangePicker} />
 
-#### Different amount of calendars
+## Different amount of calendars
 
 Make sure that `calendars` prop is working only for desktop mode.
 
 <Example source={CalendarsDateRangePicker} />
 
-#### Disabling dates
+## Disabling dates
 
 Disabling dates performs just like in simple `DatePicker`
 
 <Example source={MinMaxDateRangePicker} />
 
-#### Custom input component
+## Custom input component
 
 You can customize rendering input by `renderInput` prop. For `DateRangePicker` it takes **2** parameters – for start and end input respectively.
 So if you need to render custom input make sure you will spread `ref` and `inputProps` correctly to the input components.
 
 <Example source={CustomRangeInputs} />
 
-#### Static mode
+## Static mode
 
 It is possible to render any picker without modal or popper. For that use `StaticDateRangePicker`.
 
@@ -69,6 +69,6 @@ It is possible to render any picker without modal or popper. For that use `Stati
   <Example paddingBottom source={StaticDateRangePicker} />
 </Hidden>
 
-#### API
+## API
 
 <LinkedComponents components={['DateRangePicker']} />

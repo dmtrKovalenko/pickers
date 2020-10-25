@@ -1,3 +1,4 @@
+import '../main.css';
 import sinon from 'sinon';
 import React from 'react';
 import App from 'next/app';

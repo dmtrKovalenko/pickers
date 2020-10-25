@@ -8,6 +8,11 @@ declare module 'moment-jalaali' {
   export default value;
 }
 
+declare module '*.png' {
+  const value: any;
+  export default value;
+}
+
 declare module '@material-ui/core/styles/overrides' {
   export interface ComponentNameToClassKey extends MuiPickersComponentsToClassName {}
 }

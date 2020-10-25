@@ -19,7 +19,7 @@ import Code from './Code';
 
 const useStyles = makeStyles((theme) => ({
   header: {
-    marginTop: 24,
+    marginTop: 48,
   },
   tableWrapper: {
     overflowX: 'auto',
@@ -137,7 +137,9 @@ const PropTypesTableLazy: React.FC<PropTypesTableProps> = ({ disableHeader, src 
                   </Typography>
                 </TableCell>
                 <TableCell className={classes.description}>
-                  <ReactMarkdown source={prop.description} />
+                  <Typography variant="body2" component="span">
+                    <ReactMarkdown source={prop.description} />
+                  </Typography>
                 </TableCell>
               </TableRow>
             ))}

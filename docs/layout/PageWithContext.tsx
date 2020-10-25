@@ -4,7 +4,6 @@ import Layout from './Layout';
 import orange from '@material-ui/core/colors/deepOrange';
 import { create } from 'jss';
 import { SnackbarProvider } from 'notistack';
-import { setPrismTheme } from '../utils/prism';
 import { PageContext } from '../utils/getPageContext';
 import { LocalizationProvider } from '@material-ui/pickers';
 import { UtilsContext } from '../_shared/UtilsServiceContext';
@@ -32,7 +31,7 @@ const createCustomMuiTheme = (theme: ThemeType, direction: Theme['direction']) =
     direction,
     palette: {
       primary: {
-        main: theme === 'dark' ? '#fdd835' : '#43a047',
+        main: '#4db6ac',
       },
       secondary: orange,
       type: theme,
@@ -92,7 +91,6 @@ export const PageWithContexts: React.SFC<Props> = ({
     const newTheme = theme === 'light' ? 'dark' : 'light';
 
     setTheme(newTheme);
-    setPrismTheme(newTheme);
     document.cookie = `theme=${newTheme}`;
   }, [theme]);
 

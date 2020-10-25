@@ -1,0 +1,86 @@
+@tailwind base;
+@tailwind utilities;
+
+h1 {
+  @apply text-6xl;
+  @apply my-4;
+}
+
+h2 {
+  @apply text-4xl;
+  @apply mb-4;
+  @apply mt-8;
+}
+
+p {
+  @apply text-lg;
+  @apply my-4;
+}
+
+pre {
+  font-size: 1em;
+  border-radius: 4px;
+  margin: 24px 0 !important;
+  padding: 14px;
+  background-color: #011627;
+  color: #fff;
+  font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+}
+
+code {
+  font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+  /* background-color: rgba(247,250,252, 1); */
+}
+
+blockquote {
+  margin-left: 0;
+  padding-left: 1em;
+}
+
+blockquote > p {
+  font-size: 0.9rem;
+}
+
+h1 a.anchor-link-style,
+h2 a.anchor-link-style,
+h3 a.anchor-link-style,
+h4 a.anchor-link-style,
+h5 a.anchor-link-style {
+  color: rgba(0, 0, 0, 0.54);
+  font-size: 80%;
+  visibility: hidden;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto;
+  margin-left: 4px;
+  text-decoration: none;
+}
+
+.dark h1 a.anchor-link-style,
+.dark h2 a.anchor-link-style,
+.dark h3 a.anchor-link-style,
+.dark h4 a.anchor-link-style,
+.dark h5 a.anchor-link-style {
+  color: rgba(255, 255, 255, 0.7)
+}
+
+h1:hover a.anchor-link-style,
+h2:hover a.anchor-link-style,
+h3:hover a.anchor-link-style,
+h4:hover a.anchor-link-style,
+h5:hover a.anchor-link-style {
+  visibility: visible;
+}
+
+ul {
+  @apply text-lg;
+  margin-bottom: 16px;
+  margin-left: 16px;
+  list-style: circle;
+}
+
+a:not(.unstyled-link) {
+  @apply text-primary;
+}
+
+button:focus {
+  outline: none;
+}
