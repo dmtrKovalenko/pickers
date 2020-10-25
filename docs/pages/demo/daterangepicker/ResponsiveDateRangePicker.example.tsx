@@ -5,7 +5,7 @@ import {
   DateRangeDelimiter,
   DesktopDateRangePicker,
   DateRange,
-} from '@material-ui/pickers';
+} from '@pickers/material-ui';
 
 export default function ResponsiveDateRangePicker() {
   const [value, setValue] = React.useState<DateRange<Date>>([null, null]);

@@ -3,7 +3,7 @@ import moment, { Moment } from 'moment';
 import JalaliAdapter from '@date-io/jalaali';
 import TextField from '@material-ui/core/TextField';
 import { loadPersian } from 'moment-jalaali';
-import { TimePicker, DateTimePicker, DatePicker, LocalizationProvider } from '@material-ui/pickers';
+import { TimePicker, DateTimePicker, DatePicker, LocalizationProvider } from '@pickers/material-ui';
 
 loadPersian({ dialect: 'persian-modern', usePersianDigits: true });
 

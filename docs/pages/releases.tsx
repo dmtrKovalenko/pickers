@@ -39,8 +39,8 @@ const Releases: NextFC<ReleasesProps> = ({ tags }) => {
   return (
     <React.Fragment>
       <PageMeta
-        title="Releases - @material-ui/pickers"
-        description="List of @material-ui/pickers releases with a link to per-release documentation site."
+        title="Releases - @pickers/material-ui"
+        description="List of @pickers/material-ui releases with a link to per-release documentation site."
       />
       <Typography variant="h2" gutterBottom>
         Releases
@@ -65,7 +65,7 @@ const Releases: NextFC<ReleasesProps> = ({ tags }) => {
                 <strong> Unpublished </strong>
               </TableCell>
               <TableCell>
-                <ExternalLink href="https://dev.material-ui-pickers.dev/" />
+                <ExternalLink href="https://dev.pickers.dmtrkovalenko.dev/" />
               </TableCell>
               <TableCell>
                 This is unpublished <b> future in-development </b> version.

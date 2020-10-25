@@ -320,7 +320,7 @@
     },
     "onError": {
       "defaultValue": null,
-      "description": "Callback that fired when input value or new `value` prop validation returns **new** validation error (or value is valid after error).\nIn case of validation error detected `reason` prop return non-null value and `TextField` must be displayed in `error` state.\nThis can be used to render appropriate form error.\n\n[Read the guide](https://next.material-ui-pickers.dev/guides/forms) about form integration and error displaying.\n@DateIOType",
+      "description": "Callback that fired when input value or new `value` prop validation returns **new** validation error (or value is valid after error).\nIn case of validation error detected `reason` prop return non-null value and `TextField` must be displayed in `error` state.\nThis can be used to render appropriate form error.\n\n[Read the guide](https://next.pickers.dmtrkovalenko.dev/guides/forms) about form integration and error displaying.\n@DateIOType",
       "name": "onError",
       "parent": {
         "fileName": "pickers/lib/src/_shared/hooks/useValidation.ts",
@@ -570,7 +570,7 @@
     },
     "renderDay": {
       "defaultValue": null,
-      "description": "Custom renderer for day. Check [DayComponentProps api](https://material-ui-pickers.dev/api/Day).",
+      "description": "Custom renderer for day. Check [DayComponentProps api](https://pickers.dmtrkovalenko.dev/api/Day).",
       "name": "renderDay",
       "parent": {
         "fileName": "pickers/lib/src/views/Calendar/Calendar.tsx",
@@ -1178,7 +1178,7 @@
     },
     "dateAdapter": {
       "defaultValue": null,
-      "description": "Allows to pass configured date-io adapter directly. More info [here](https://next.material-ui-pickers.dev/guides/date-adapter-passing)\n```jsx\ndateAdapter={new DateFnsAdapter({ locale: ruLocale })}\n```",
+      "description": "Allows to pass configured date-io adapter directly. More info [here](https://next.pickers.dmtrkovalenko.dev/guides/date-adapter-passing)\n```jsx\ndateAdapter={new DateFnsAdapter({ locale: ruLocale })}\n```",
       "name": "dateAdapter",
       "parent": {
         "fileName": "pickers/lib/src/_shared/withDateAdapterProp.tsx",
@@ -1307,7 +1307,7 @@
     },
     "onError": {
       "defaultValue": null,
-      "description": "Callback that fired when input value or new `value` prop validation returns **new** validation error (or value is valid after error).\nIn case of validation error detected `reason` prop return non-null value and `TextField` must be displayed in `error` state.\nThis can be used to render appropriate form error.\n\n[Read the guide](https://next.material-ui-pickers.dev/guides/forms) about form integration and error displaying.\n@DateIOType",
+      "description": "Callback that fired when input value or new `value` prop validation returns **new** validation error (or value is valid after error).\nIn case of validation error detected `reason` prop return non-null value and `TextField` must be displayed in `error` state.\nThis can be used to render appropriate form error.\n\n[Read the guide](https://next.pickers.dmtrkovalenko.dev/guides/forms) about form integration and error displaying.\n@DateIOType",
       "name": "onError",
       "parent": {
         "fileName": "pickers/lib/src/_shared/hooks/useValidation.ts",
@@ -1870,7 +1870,7 @@
     },
     "dateAdapter": {
       "defaultValue": null,
-      "description": "Allows to pass configured date-io adapter directly. More info [here](https://next.material-ui-pickers.dev/guides/date-adapter-passing)\n```jsx\ndateAdapter={new DateFnsAdapter({ locale: ruLocale })}\n```",
+      "description": "Allows to pass configured date-io adapter directly. More info [here](https://next.pickers.dmtrkovalenko.dev/guides/date-adapter-passing)\n```jsx\ndateAdapter={new DateFnsAdapter({ locale: ruLocale })}\n```",
       "name": "dateAdapter",
       "parent": {
         "fileName": "pickers/lib/src/_shared/withDateAdapterProp.tsx",
@@ -1989,7 +1989,7 @@
     },
     "onError": {
       "defaultValue": null,
-      "description": "Callback that fired when input value or new `value` prop validation returns **new** validation error (or value is valid after error).\nIn case of validation error detected `reason` prop return non-null value and `TextField` must be displayed in `error` state.\nThis can be used to render appropriate form error.\n\n[Read the guide](https://next.material-ui-pickers.dev/guides/forms) about form integration and error displaying.\n@DateIOType",
+      "description": "Callback that fired when input value or new `value` prop validation returns **new** validation error (or value is valid after error).\nIn case of validation error detected `reason` prop return non-null value and `TextField` must be displayed in `error` state.\nThis can be used to render appropriate form error.\n\n[Read the guide](https://next.pickers.dmtrkovalenko.dev/guides/forms) about form integration and error displaying.\n@DateIOType",
       "name": "onError",
       "parent": {
         "fileName": "pickers/lib/src/_shared/hooks/useValidation.ts",
@@ -2353,7 +2353,7 @@
     },
     "renderDay": {
       "defaultValue": null,
-      "description": "Custom renderer for day. Check [DayComponentProps api](https://material-ui-pickers.dev/api/Day).",
+      "description": "Custom renderer for day. Check [DayComponentProps api](https://pickers.dmtrkovalenko.dev/api/Day).",
       "name": "renderDay",
       "parent": {
         "fileName": "pickers/lib/src/views/Calendar/Calendar.tsx",
@@ -2933,7 +2933,7 @@
     },
     "dateAdapter": {
       "defaultValue": null,
-      "description": "Allows to pass configured date-io adapter directly. More info [here](https://next.material-ui-pickers.dev/guides/date-adapter-passing)\n```jsx\ndateAdapter={new DateFnsAdapter({ locale: ruLocale })}\n```",
+      "description": "Allows to pass configured date-io adapter directly. More info [here](https://next.pickers.dmtrkovalenko.dev/guides/date-adapter-passing)\n```jsx\ndateAdapter={new DateFnsAdapter({ locale: ruLocale })}\n```",
       "name": "dateAdapter",
       "parent": {
         "fileName": "pickers/lib/src/_shared/withDateAdapterProp.tsx",
@@ -3517,7 +3517,7 @@
     },
     "onError": {
       "defaultValue": null,
-      "description": "Callback that fired when input value or new `value` prop validation returns **new** validation error (or value is valid after error).\nIn case of validation error detected `reason` prop return non-null value and `TextField` must be displayed in `error` state.\nThis can be used to render appropriate form error.\n\n[Read the guide](https://next.material-ui-pickers.dev/guides/forms) about form integration and error displaying.\n@DateIOType",
+      "description": "Callback that fired when input value or new `value` prop validation returns **new** validation error (or value is valid after error).\nIn case of validation error detected `reason` prop return non-null value and `TextField` must be displayed in `error` state.\nThis can be used to render appropriate form error.\n\n[Read the guide](https://next.pickers.dmtrkovalenko.dev/guides/forms) about form integration and error displaying.\n@DateIOType",
       "name": "onError",
       "parent": {
         "fileName": "pickers/lib/src/_shared/hooks/useValidation.ts",
@@ -3853,7 +3853,7 @@
     },
     "dateAdapter": {
       "defaultValue": null,
-      "description": "Allows to pass configured date-io adapter directly. More info [here](https://next.material-ui-pickers.dev/guides/date-adapter-passing)\n```jsx\ndateAdapter={new DateFnsAdapter({ locale: ruLocale })}\n```",
+      "description": "Allows to pass configured date-io adapter directly. More info [here](https://next.pickers.dmtrkovalenko.dev/guides/date-adapter-passing)\n```jsx\ndateAdapter={new DateFnsAdapter({ locale: ruLocale })}\n```",
       "name": "dateAdapter",
       "parent": {
         "fileName": "pickers/lib/src/_shared/withDateAdapterProp.tsx",
@@ -3896,7 +3896,7 @@
     },
     "renderDay": {
       "defaultValue": null,
-      "description": "Custom renderer for day. Check [DayComponentProps api](https://material-ui-pickers.dev/api/Day).",
+      "description": "Custom renderer for day. Check [DayComponentProps api](https://pickers.dmtrkovalenko.dev/api/Day).",
       "name": "renderDay",
       "parent": {
         "fileName": "pickers/lib/src/views/Calendar/Calendar.tsx",

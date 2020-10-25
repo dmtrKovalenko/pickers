@@ -2,9 +2,9 @@
 import * as React from 'react';
 import Badge from '@material-ui/core/Badge';
 import TextField from '@material-ui/core/TextField';
-import { DatePicker, PickersDay } from '@material-ui/pickers';
+import { DatePicker, PickersDay } from '@pickers/material-ui';
 // @ts-ignore
-import { CalendarSkeleton } from '@material-ui/pickers/CalendarSkeleton';
+import { CalendarSkeleton } from '@pickers/material-ui/CalendarSkeleton';
 // TODO remove relative import
 import { makeJSDateObject } from '../../../utils/helpers';
 

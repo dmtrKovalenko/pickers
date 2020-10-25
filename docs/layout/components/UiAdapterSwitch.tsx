@@ -62,7 +62,7 @@ export function UiAdapterSwitch() {
 
               <p className="mx-4 my-4 text-sm">
                 We are now support only Material-UI. But we are working on support more UI outputs.
-                <br /> Vote for the next adapter 🙈
+                <br /> <a target="_blank" rel="noopener noreferrer" href="https://github.com/dmtrKovalenko/pickers/issues/1">Vote</a> for the next adapter 🙈
               </p>
             </Paper>
           </Grow>

@@ -1,6 +1,6 @@
 import * as React from 'react';
 import TextField from '@material-ui/core/TextField';
-import { DatePicker } from '@material-ui/pickers';
+import { DatePicker } from '@pickers/material-ui';
 
 export default function BasicDatePicker() {
   const [value, setValue] = React.useState<Date | null>(new Date());

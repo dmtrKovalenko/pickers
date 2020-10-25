@@ -1,0 +1,98 @@
+import Ad from '_shared/Ad';
+import PageMeta from '_shared/PageMeta';
+import { DatePicker } from '@pickers/material-ui';
+import TextField from '@material-ui/core/TextField';
+
+<PageMeta title="Update to @pickers/material-ui v4" />
+
+# Upgrading to v4
+
+For almost a year we've been working on the completely new step of the Date & Time pickers. This particular project was migrated from `@pickers/material-ui` and here are some info about the migration process.
+
+> If you are using @pickers/material-ui@4.0.0-alpha-12 – it is the same build and version. No additional breaking changes.
+
+## ☢️ Attention
+
+We changed literally everything, so it is not possible to maintain the whole list of changes. Here is an overview of the most important concepts that were changed. If you are going to migrate – the easiest way will be to go through the component usages in your codebase and rewrite them one-by-one. Do not forget to run your tests after all!
+
+<Ad />
+
+## ⬇️ Install
+
+First of all, you need to install completely new package, because the project was moved out of material-ui! Please also note that one day (I hope!) Material-UI will merge the outdated version of **this** project into the core.
+
+```
+npm i @pickers/material-ui
+
+yarn add @pickers/material-ui
+```
+
+## 🌚 Imports
+
+We do not expose the `keyboard` version of pickers anymore. All the version of mobile and desktop pickers implements keyboard input for dates for accessibility reasons.
+
+```diff
+- import { KeyboardDatePicker } from '@pickers/material-ui'
++ import { DatePicker } from '@pickers/material-ui'
+
+- <KeyboDatePicker />
++ <DatePicker />
+```
+
+Also insted of `variant` prop specific wrappers of components were moved to different imports. So you will not bundle the `Dialog` if you are using only desktop picker view.
+
+- `<DesktopDatePicker />` – Only desktop view.
+- `<MobileDatePicker />` – Only mobile view.
+- `<DatePicker />` – Mobile or Desktop view according to the user **pointer** preference.
+- `<StaticDatePicker />` – The picker view itself, without input or any other wrapper.
+
+```diff
++ import { DesktopDatePicker } from '@pickers/material-ui'
+
+- <DatePicker variant="inline" />
++ <DesktopDatePicker />
+```
+
+## Render input
+
+We introduced a new **required** `renderInput` prop. It simplifies using different of material-ui text field input components.
+
+```jsx
+<DatePicker renderInput={(props) => <TextField {...props} />} />
+<TimePicker renderInput={(props) => <TextField {...props} />} />
+```
+
+Also before we were spreading props down to the `<TextField />` props. From now you need to use this new **required prop** `renderInput` to render the prop:
+
+```diff
+  <DatePicker
+-   label="Date"
+-   helperText="Something"
++   renderInput={props => <TextField label="Date" helperText="Something" /> }
+  />
+```
+
+## State management
+
+We changed how pickers works with the internal state. They will now call the `onChange` prop when each view of picker ends its input, so double check your form state-management logic.
+
+## No required mask
+
+Mask is no longer required. If your passed mask is not valid for the input – pickers will just ignore the mask input and allow the arbitrary input.
+
+<DatePicker
+  mask="mm"
+  value={new Date()}
+  onChange={console.log}
+  renderInput={(props) => (
+    <TextField  {...props} label="Date" helperText="invalid mask" style={{ marginRight: 16 }} />
+  )}
+/>
+
+<DatePicker
+  value={new Date()}
+  onChange={console.log}
+  renderInput={(props) => <TextField {...props}  label="Date" helperText="valid mask" />}
+/>
+
+## And many more...

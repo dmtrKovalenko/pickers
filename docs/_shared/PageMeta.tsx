@@ -11,8 +11,8 @@ interface PageMetaProps extends WithRouterProps {
 
 export function PageMeta({ title, component, router, description }: PageMetaProps) {
   if (component) {
-    title = `${component} - @material-ui/pickers component`;
-    description = `${component} usage examples and API of @material-ui/pickers`;
+    title = `${component} - @pickers/material-ui component`;
+    description = `${component} usage examples and API of @pickers/material-ui`;
   }
 
   if (!description) {

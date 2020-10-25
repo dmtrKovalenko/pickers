@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'next/link';
 import { GITHUB_URL } from '_constants';
 import PageMeta from '_shared/PageMeta';
 import GitHub from '_shared/svgIcons/GithubIcon';
@@ -14,23 +15,28 @@ function Landing() {
       />
       <section className="text-gray-700 body-font">
         <div className="container mx-auto flex px-5 py-24 items-center justify-center flex-col">
-          <Logo className="lg:w-2/6 md:w-3/6 w-5/6 mb-10 object-cover object-center rounded" />
+          <Logo />
 
           <div className="text-center lg:w-2/3 w-full">
             <h1 className="title-font mt-8 sm:text-4xl text-3xl mb-4 font-medium text-gray-900">
               All-in-one set of Date/Time pickers
             </h1>
             <p className="mb-8 leading-relaxed">
-              This project is a continuation of @material-ui/pickers project by the original author.
-              Our goal is to provide the first-class experience for Date/Time picking for
-              [Material-UI](), [Tailwind]() and many more users.
+              This project is a continuation of @pickers/material-ui project by the original author.
+              Our goal is to provide the first-class experience for Date/Time picking for{' '}
+              <a href="https://material-ui.com/">Material-UI</a>, <a href="https://tailwindcss.com/">Tailwind</a> and pure react users.
             </p>
             <div className="flex justify-center">
-              <button className="inline-flex shadow-md text-white bg-primary border-0 py-2 px-6 focus:outline-none transition-colors duration-200 ease-in-out hover:bg-primary-lighter rounded text-lg">
-                Get Started
-              </button>
+              <Link href="/getting-started/installation">
+                <button className="inline-flex shadow-md text-white bg-primary border-0 py-2 px-6 focus:outline-none transition-colors duration-200 ease-in-out hover:bg-primary-lighter rounded text-lg">
+                  Get Started
+                </button>
+              </Link>
 
-              <a href={GITHUB_URL} className="ml-4 unstyled-link container flex justify-between text-gray-700 bg-gray-200 border-0 py-2 px-6 focus:outline-none hover:bg-gray-300 rounded text-lg">
+              <a
+                href={GITHUB_URL}
+                className="ml-4 unstyled-link container flex justify-between text-gray-700 bg-gray-200 border-0 py-2 px-6 focus:outline-none hover:bg-gray-300 rounded text-lg"
+              >
                 Github
                 <GitHub className="ml-2" />
               </a>
@@ -108,8 +114,7 @@ function Landing() {
           </div>
         </div>
       </section>
-      <hr id="why-material-ui"  className="w-40 border-t-4 font-900 text-center mt-16 mx-auto" />
-
+      <hr id="why-material-ui" className="w-40 border-t-4 font-900 text-center mt-16 mx-auto" />
 
       <WhyNewProject />
     </div>

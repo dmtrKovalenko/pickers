@@ -1,6 +1,6 @@
 import * as React from 'react';
 import TextField from '@material-ui/core/TextField';
-import { StaticDateRangePicker, DateRangeDelimiter, DateRange } from '@material-ui/pickers';
+import { StaticDateRangePicker, DateRangeDelimiter, DateRange } from '@pickers/material-ui';
 
 export default function StaticDateRangePickerExample() {
   const [value, setValue] = React.useState<DateRange<Date>>([null, null]);

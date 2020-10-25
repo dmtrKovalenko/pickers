@@ -5,7 +5,7 @@ import orange from '@material-ui/core/colors/deepOrange';
 import { create } from 'jss';
 import { SnackbarProvider } from 'notistack';
 import { PageContext } from '../utils/getPageContext';
-import { LocalizationProvider } from '@material-ui/pickers';
+import { LocalizationProvider } from '@pickers/material-ui';
 import { UtilsContext } from '../_shared/UtilsServiceContext';
 import { NotificationManager } from 'utils/NotificationManager';
 import { createUtilsService, UtilsLib, utilsMap } from '../utils/utilsService';

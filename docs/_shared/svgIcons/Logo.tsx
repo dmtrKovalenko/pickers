@@ -15,7 +15,7 @@ const useStyles = makeStyles({
   },
 });
 
-export default function Logo({ size = 200}: { size: number }) {
+export default function Logo({ size = 200}: { size?: number }) {
   const theme = useTheme();
   const classes = useStyles();
 

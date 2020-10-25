@@ -1,8 +1,8 @@
 import * as React from 'react';
 import frLocale from 'date-fns/locale/fr';
 import TextField from '@material-ui/core/TextField';
-import { DatePicker, LocalizationProvider } from '@material-ui/pickers';
-import DateFnsAdapter from '@material-ui/pickers/adapter/date-fns';
+import { DatePicker, LocalizationProvider } from '@pickers/material-ui';
+import DateFnsAdapter from '@pickers/material-ui/adapter/date-fns';
 
 const formats = {
   normalDate: 'd MMM yyy',

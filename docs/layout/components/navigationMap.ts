@@ -50,7 +50,7 @@ export const navItems = [
         href: '/guides/controlling-programmatically',
       },
       { title: 'Static inner components', href: '/guides/static-components' },
-      { title: 'Updating to v3', href: '/guides/upgrading-to-v3' },
+      { title: 'Updating from v3', href: '/guides/upgrading-from-v3' },
     ],
   },
 ] as const;

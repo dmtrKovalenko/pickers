@@ -40,7 +40,7 @@ const Docs: React.FC<WithRouterProps> = ({ router }) => {
         </Grid>
       </Grid>
       <h2> Import </h2>
-      <Code language="jsx">{`import { ${componentName} } from '@material-ui/pickers'`}</Code>
+      <Code language="jsx">{`import { ${componentName} } from '@pickers/material-ui'`}</Code>
 
       <PropTypesTable src={componentName} />
     </React.Fragment>

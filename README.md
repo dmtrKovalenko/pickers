@@ -1,5 +1,5 @@
 <p align="center">
-  <a href="https://material-ui.com/" rel="noopener" target="_blank"><img width="200" src="https://material-ui-pickers.dev/static/meta-image.png" alt="Material-ui-pickers logo"></a></p>
+  <a href="https://material-ui.com/" rel="noopener" target="_blank"><img width="200" src="https://pickers.dmtrkovalenko.dev/static/meta-image.png" alt="Material-ui-pickers logo"></a></p>
 </p>
 
 <h1 align="center">Material-UI pickers</h1>
@@ -8,10 +8,10 @@
 
 Accessible, customizable, delightful date & time pickers for [@material-ui/core](https://material-ui.com/)
 
-[![npm package](https://img.shields.io/npm/v/@material-ui/pickers.svg)](https://www.npmjs.org/package/@material-ui/pickers)
-[![npm download](https://img.shields.io/npm/dm/@material-ui/pickers.svg)](https://www.npmjs.org/package/@material-ui/pickers)
+[![npm package](https://img.shields.io/npm/v/@pickers/material-ui.svg)](https://www.npmjs.org/package/@pickers/material-ui)
+[![npm download](https://img.shields.io/npm/dm/@pickers/material-ui.svg)](https://www.npmjs.org/package/@pickers/material-ui)
 [![codecov](https://codecov.io/gh/mui-org/material-ui-pickers/branch/next/graph/badge.svg)](https://codecov.io/gh/mui-org/material-ui-pickers)
-[![Bundle Size](https://badgen.net/bundlephobia/minzip/@material-ui/pickers)](https://bundlephobia.com/result?p=@material-ui/pickers@latest)
+[![Bundle Size](https://badgen.net/bundlephobia/minzip/@pickers/material-ui)](https://bundlephobia.com/result?p=@pickers/material-ui@latest)
 [![CircleCI](https://circleci.com/gh/mui-org/material-ui-pickers.svg?style=svg)](https://circleci.com/gh/mui-org/material-ui-pickers)
 [![Cypress.io tests](https://img.shields.io/badge/cypress.io-tests-green.svg?style=flat-square)](https://dashboard.cypress.io/#/projects/qow28y/runs)
 [![This project is using Percy.io for visual regression testing.](https://percy.io/static/images/percy-badge.svg)](https://percy.io/mui-org/material-ui-pickers)
@@ -21,23 +21,23 @@ Accessible, customizable, delightful date & time pickers for [@material-ui/core]
 
 ### Installation
 
-Note that this package requires `@material-ui/core` **v4**. It will not work with the old v3. Please read the [migration guide](https://material-ui-pickers.dev/guides/upgrading-to-v3) if you are updating from v2
+Note that this package requires `@material-ui/core` **v4**. It will not work with the old v3. Please read the [migration guide](https://pickers.dmtrkovalenko.dev/guides/upgrading-to-v3) if you are updating from v2
 
 ```sh
 // via npm
-npm i @material-ui/pickers
+npm i @pickers/material-ui
 
 // via yarn
-yarn add @material-ui/pickers
+yarn add @pickers/material-ui
 ```
 
 ### Getting started
 
-[Here is instruction](https://material-ui-pickers.dev/getting-started/installation#peer-library) of how to get started with `@material-ui/pickers`.
+[Here is instruction](https://pickers.dmtrkovalenko.dev/getting-started/installation#peer-library) of how to get started with `@pickers/material-ui`.
 
 ## Documentation
 
-Check out the [documentation website](https://material-ui-pickers.dev/)
+Check out the [documentation website](https://pickers.dmtrkovalenko.dev/)
 
 ### Recently updated?
 

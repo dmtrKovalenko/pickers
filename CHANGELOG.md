@@ -6,7 +6,7 @@
 
 Big thanks to the 9 contributors who made this release possible.
 
-### `@material-ui/pickers@v4.0.0-alpha.11`
+### `@pickers/material-ui@v4.0.0-alpha.11`
 
 #### Breaking changes
 

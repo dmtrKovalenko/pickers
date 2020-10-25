@@ -7,7 +7,7 @@ export interface ValidationProps<TError, TDateValue> {
    * In case of validation error detected `reason` prop return non-null value and `TextField` must be displayed in `error` state.
    * This can be used to render appropriate form error.
    *
-   * [Read the guide](https://next.material-ui-pickers.dev/guides/forms) about form integration and error displaying.
+   * [Read the guide](https://next.pickers.dmtrkovalenko.dev/guides/forms) about form integration and error displaying.
    * @DateIOType
    */
   onError?: (reason: TError, value: TDateValue) => void;

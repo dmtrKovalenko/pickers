@@ -1,6 +1,6 @@
 import * as React from 'react';
 import TextField from '@material-ui/core/TextField';
-import { TimePicker } from '@material-ui/pickers';
+import { TimePicker } from '@pickers/material-ui';
 
 export default function BasicTimePicker() {
   const [value, setValue] = React.useState<Date | null>(new Date());

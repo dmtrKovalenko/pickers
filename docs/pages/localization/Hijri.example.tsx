@@ -3,7 +3,7 @@ import * as React from 'react';
 import moment, { Moment } from 'moment';
 import HijriAdapter from '@date-io/hijri';
 import TextField from '@material-ui/core/TextField';
-import { TimePicker, DateTimePicker, DatePicker, LocalizationProvider } from '@material-ui/pickers';
+import { TimePicker, DateTimePicker, DatePicker, LocalizationProvider } from '@pickers/material-ui';
 
 export default function HijriExample() {
   const [selectedDate, handleDateChange] = React.useState<Moment | null>(moment());
