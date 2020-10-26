@@ -13,7 +13,9 @@ import {
   makeStyles,
   Typography,
   Grid,
+  ThemeProvider,
 } from '@material-ui/core';
+import { createCustomMuiTheme } from 'layout/PageWithContext';
 import PropTypesDoc from '../prop-types.json';
 import Code from './Code';
 
@@ -104,48 +106,48 @@ const PropTypesTableLazy: React.FC<PropTypesTableProps> = ({ disableHeader, src 
           </Grid>
         </Grid>
       )}
-      <Paper className={classes.tableWrapper}>
-        <Table>
-          <TableHead>
-            <TableRow>
-              <TableCell> Name </TableCell>
-              <TableCell> Type </TableCell>
-              <TableCell> Default </TableCell>
-              <TableCell> Description </TableCell>
-            </TableRow>
-          </TableHead>
-          <TableBody>
-            {propsToShow.map((prop) => (
-              <TableRow key={prop.name}>
-                <TableCell
-                  className={clsx({
-                    [classes.required]: prop.required,
-                  })}
-                >
-                  <Typography variant="body2">
-                    {prop.required ? `${prop.name} *` : prop.name}{' '}
-                  </Typography>
-                </TableCell>
-                <TableCell>
-                  <Code inline language="typescript">
-                    {prop.type.name}
-                  </Code>
-                </TableCell>
-                <TableCell className={classes.defaultValue}>
-                  <Typography align="center" variant="body1" component="span">
-                    {prop.defaultValue && prop.defaultValue.value}
-                  </Typography>
-                </TableCell>
-                <TableCell className={classes.description}>
-                  <Typography variant="body2" component="span">
-                    <ReactMarkdown source={prop.description} />
-                  </Typography>
-                </TableCell>
+      <ThemeProvider theme={createCustomMuiTheme('dark', 'ltr')}>
+        <Paper className={classes.tableWrapper}>
+          <Table>
+            <TableHead>
+              <TableRow>
+                <TableCell> Name </TableCell>
+                <TableCell> Type </TableCell>
+                <TableCell> Default </TableCell>
+                <TableCell> Description </TableCell>
               </TableRow>
-            ))}
-          </TableBody>
-        </Table>
-      </Paper>
+            </TableHead>
+            <TableBody>
+              {propsToShow.map((prop) => (
+                <TableRow key={prop.name}>
+                  <TableCell
+                    className={clsx({
+                      [classes.required]: prop.required,
+                    })}
+                  >
+                    <p>
+                      {prop.required ? `${prop.name} *` : prop.name}{' '}
+                    </p>
+                  </TableCell>
+                  <TableCell>
+                    <Code inline language="typescript">
+                      {prop.type.name}
+                    </Code>
+                  </TableCell>
+                  <TableCell className={classes.defaultValue}>
+                    <Typography align="center" variant="body1" component="span">
+                      {prop.defaultValue && prop.defaultValue.value}
+                    </Typography>
+                  </TableCell>
+                  <TableCell className={classes.description}>
+                    <ReactMarkdown source={prop.description} />
+                  </TableCell>
+                </TableRow>
+              ))}
+            </TableBody>
+          </Table>
+        </Paper>
+      </ThemeProvider>
     </React.Fragment>
   );
 };

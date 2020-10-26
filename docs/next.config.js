@@ -44,7 +44,7 @@ module.exports = withBundleAnalyzer(
               // Process examples to inject raw code strings
               config.module.rules.push({
                 test: /\.example\.(js|jsx|tsx|ts)$/,
-                include: [path.resolve(__dirname, 'pages')],
+                include: [path.resolve(__dirname, 'examples')],
                 use: [
                   { loader: 'next-babel-loader' },
                   {

@@ -1,7 +1,7 @@
 import * as React from 'react';
-import WhyNewProjectText from './WhyNewProject.mdx';
-import KawaiiIcon from '_shared/svgIcons/KawaiiIcon';
+import KawaiiIcon from 'components/svgIcons/KawaiiIcon';
 import Link from 'next/link';
+import WhyNewProjectText from './WhyNewProject.mdx';
 
 interface WhyNewProjectProps {}
 
@@ -20,7 +20,10 @@ export const WhyNewProject: React.FC<WhyNewProjectProps> = ({}) => {
         </p>
         <div className="flex justify-center">
           <Link href="/guides/upgrading-from-v3">
-            <button className="inline-flex shadow-md text-white bg-primary border-0 py-2 px-6 focus:outline-none transition-colors duration-200 ease-in-out hover:bg-primary-lighter rounded text-lg">
+            <button
+              type="button"
+              className="inline-flex shadow-md text-white bg-primary border-0 py-2 px-6 focus:outline-none transition-colors duration-200 ease-in-out hover:bg-primary-lighter rounded text-lg"
+            >
               How to upgrade?
             </button>
           </Link>

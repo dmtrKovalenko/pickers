@@ -1,7 +1,7 @@
 /* eslint-disable */
 import * as React from 'react';
 import { NextFC } from 'next';
-import { PageMeta } from '_shared/PageMeta';
+import { PageMeta } from 'components/PageMeta';
 import { fetchGithubData } from 'utils/github-api';
 import { DOMAIN, GITHUB_URL, HOST_URL } from '_constants';
 import {

@@ -10,7 +10,7 @@ import { makeStyles } from '@material-ui/core';
 // this guy required only on the docs site to work with dynamic date library
 import { DatePicker, PickersDay, PickersDayProps } from '@pickers/material-ui';
 // TODO remove relative import
-import { makeJSDateObject } from '../../../utils/helpers';
+import { makeJSDateObject } from '../utils/helpers';
 
 const useStyles = makeStyles((theme) => ({
   highlight: {

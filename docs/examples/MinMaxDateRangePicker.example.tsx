@@ -6,7 +6,7 @@ import { Moment } from 'moment';
 import { DateTime } from 'luxon';
 import { DateRangePicker, DateRangeDelimiter, DateRange } from '@pickers/material-ui';
 // TODO remove relative import
-import { makeJSDateObject } from '../../../utils/helpers';
+import { makeJSDateObject } from '../utils/helpers';
 
 function getWeeksAfter(date: Moment | DateTime | Dayjs | Date, amount: number) {
   // TODO: replace with implementation for your date library

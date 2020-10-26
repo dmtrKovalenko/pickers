@@ -2,9 +2,9 @@ import * as React from 'react';
 import clsx from 'clsx';
 import MenuIcon from '@material-ui/icons/Menu';
 import DrawerMenu from './components/DrawerMenu';
-import Github from '../_shared/svgIcons/GithubIcon';
+import Github from '../components/svgIcons/GithubIcon';
 import SettingsIcon from '@material-ui/icons/Settings';
-import LightbulbOutlineIcon from '../_shared/svgIcons/LightbulbIcon';
+import LightbulbOutlineIcon from '../components/svgIcons/LightbulbIcon';
 import TextDirectionRtLIcon from '@material-ui/icons/FormatTextdirectionRToL';
 import TextDirectionLtrIcon from '@material-ui/icons/FormatTextdirectionLToR';
 import { GITHUB_URL } from '_constants';
@@ -23,9 +23,9 @@ import {
   Menu,
   MenuItem,
 } from '@material-ui/core';
-import Logo from '_shared/svgIcons/LogoSmall';
+import Logo from 'components/svgIcons/LogoSmall';
 import { UiAdapterSwitch } from './components/UiAdapterSwitch';
-import LogoSmall from '_shared/svgIcons/LogoSmall';
+import LogoSmall from 'components/svgIcons/LogoSmall';
 
 interface LayoutProps extends WithRouterProps, WithStyles<typeof styles, true> {
   toggleThemeType: () => void;

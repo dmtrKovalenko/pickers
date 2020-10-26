@@ -4,7 +4,7 @@ import NavigationMenu from './NavigationMenu';
 import { version } from '@pickers/material-ui/package.json';
 import { Divider, Toolbar, Typography, Theme } from '@material-ui/core';
 import { createStyles, withStyles, WithStyles } from '@material-ui/core/styles';
-import LogoSmall from '_shared/svgIcons/LogoSmall';
+import LogoSmall from 'components/svgIcons/LogoSmall';
 
 const styles = (theme: Theme) =>
   createStyles({

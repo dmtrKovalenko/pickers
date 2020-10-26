@@ -2,7 +2,7 @@ import * as React from 'react';
 import isWeekend from 'date-fns/isWeekend';
 import TextField from '@material-ui/core/TextField';
 import { StaticDatePicker } from '@pickers/material-ui';
-import { makeJSDateObject } from '../../../utils/helpers';
+import { makeJSDateObject } from '../utils/helpers';
 
 function disableWeekends(date: Date) {
   // TODO: replace with implementation for your date library

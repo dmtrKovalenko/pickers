@@ -3,7 +3,7 @@ import clsx from 'clsx';
 import CodeIcon from '@material-ui/icons/Code';
 import CopyIcon from '@material-ui/icons/FileCopy';
 import { makeStyles, IconButton, Collapse, Tooltip } from '@material-ui/core';
-import GithubIcon from '_shared/svgIcons/GithubIcon';
+import GithubIcon from 'components/svgIcons/GithubIcon';
 import { copy } from 'utils/helpers';
 import { useSnackbar } from 'notistack';
 import { GITHUB_EDIT_URL } from '_constants';

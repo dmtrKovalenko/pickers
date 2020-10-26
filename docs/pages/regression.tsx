@@ -12,8 +12,18 @@ import {
   DesktopDatePicker,
   MobileTimePicker,
   DesktopTimePicker,
-} from '@pickers/material-ui';
-import { createRegressionDay as createRegressionDayRenderer } from './RegressionDay';
+ PickersDay, PickersDayProps } from '@pickers/material-ui';
+import { IUtils } from '@date-io/core/IUtils';
+
+
+export const createRegressionDayRenderer = <TDate extends any>(utils: IUtils<TDate>) => (
+  day: any,
+  selectedDate: any,
+  dayProps: PickersDayProps<TDate>
+) => {
+  return <PickersDay {...dayProps} data-day={utils.formatByString(day, 'dd/MM/yyyy')} />;
+};
+
 
 const makeRenderInputProp = (overrideProps: Omit<Partial<TextFieldProps>, 'variant'>) => ({
   renderInput: (props: TextFieldProps) => <TextField {...props} {...overrideProps} />,

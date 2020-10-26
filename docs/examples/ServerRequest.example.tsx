@@ -6,7 +6,7 @@ import { DatePicker, PickersDay } from '@pickers/material-ui';
 // @ts-ignore
 import { CalendarSkeleton } from '@pickers/material-ui/CalendarSkeleton';
 // TODO remove relative import
-import { makeJSDateObject } from '../../../utils/helpers';
+import { makeJSDateObject } from '../utils/helpers';
 
 export default function ServerRequest() {
   const requestAbortController = React.useRef<AbortController | null>(null);

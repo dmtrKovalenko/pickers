@@ -1,14 +1,14 @@
 import clsx from 'clsx';
 import React from 'react';
-import { highlight } from '../utils/prism';
 import { makeStyles } from '@material-ui/core';
+import { highlight } from '../utils/prism';
 
 const useStyles = makeStyles((theme) => ({
   root: {
     fontFamily: theme.typography.fontFamily,
     fontSize: '1em',
     color: theme.palette.text.primary,
-    overflowY: 'scroll',
+    overflowY: 'auto',
     backgroundColor: '#011627',
     borderTopLeftRadius: 4,
     borderTopRightRadius: 4,

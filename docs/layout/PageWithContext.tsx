@@ -6,7 +6,7 @@ import { create } from 'jss';
 import { SnackbarProvider } from 'notistack';
 import { PageContext } from '../utils/getPageContext';
 import { LocalizationProvider } from '@pickers/material-ui';
-import { UtilsContext } from '../_shared/UtilsServiceContext';
+import { UtilsContext } from '../components/UtilsServiceContext';
 import { NotificationManager } from 'utils/NotificationManager';
 import { createUtilsService, UtilsLib, utilsMap } from '../utils/utilsService';
 import {
@@ -26,7 +26,7 @@ export const ThemeContext = React.createContext<ThemeType>('light');
 // Configure JSS
 const jss = create({ plugins: [...jssPreset().plugins, rtl()] });
 
-const createCustomMuiTheme = (theme: ThemeType, direction: Theme['direction']) => {
+export const createCustomMuiTheme = (theme: ThemeType, direction: Theme['direction']) => {
   return createMuiTheme({
     direction,
     palette: {

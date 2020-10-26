@@ -1,13 +1,12 @@
 import * as React from 'react';
-import Ad from '_shared/Ad';
-import Code from '_shared/Code';
-import PropTypesTable from '_shared/PropTypesTable';
-import KawaiiIcon from '_shared/svgIcons/KawaiiIcon';
-import { PageMeta } from '_shared/PageMeta';
-import { WithRouterProps, withRouter } from 'next/router';
-import { Typography, Grid, makeStyles } from '@material-ui/core';
+import Ad from 'components/Ad';
+import Code from 'components/Code';
+import PropTypesTable from 'components/PropTypesTable';
+import KawaiiIcon from 'components/svgIcons/KawaiiIcon';
+import { PageMeta } from 'components/PageMeta';
+import { useRouter } from 'next/router';
+import { Grid, makeStyles } from '@material-ui/core';
 
-const internalComponents = ['Calendar', 'ClockView', 'Day'];
 const useStyles = makeStyles((theme) => ({
   kawaiiIcon: {
     marginTop: 48,
@@ -19,9 +18,10 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-const Docs: React.FC<WithRouterProps> = ({ router }) => {
+const Docs: React.FC = () => {
+  const router = useRouter();
   const classes = useStyles();
-  const componentName = router!.query!.component! as any; // just crash if name is invalid
+  const componentName = router?.query?.component as any; // just crash if name is invalid
 
   const title = `${componentName} API`;
   const description = `Here you can find the full list and description for ${componentName} props.`;
@@ -47,4 +47,4 @@ const Docs: React.FC<WithRouterProps> = ({ router }) => {
   );
 };
 
-export default withRouter(Docs);
+export default Docs;

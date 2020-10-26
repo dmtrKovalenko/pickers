@@ -1,10 +1,10 @@
 import React from 'react';
 import Link from 'next/link';
 import { GITHUB_URL } from '_constants';
-import PageMeta from '_shared/PageMeta';
-import GitHub from '_shared/svgIcons/GithubIcon';
-import Logo from '_shared/svgIcons/Logo';
-import { WhyNewProject } from './WhyNewProject';
+import PageMeta from 'components/PageMeta';
+import GitHub from 'components/svgIcons/GithubIcon';
+import Logo from 'components/svgIcons/Logo';
+import { WhyNewProject } from '../components/WhyNewProject';
 
 function Landing() {
   return (
@@ -24,11 +24,15 @@ function Landing() {
             <p className="mb-8 leading-relaxed">
               This project is a continuation of @pickers/material-ui project by the original author.
               Our goal is to provide the first-class experience for Date/Time picking for{' '}
-              <a href="https://material-ui.com/">Material-UI</a>, <a href="https://tailwindcss.com/">Tailwind</a> and pure react users.
+              <a href="https://material-ui.com/">Material-UI</a>,{' '}
+              <a href="https://tailwindcss.com/">Tailwind</a> and pure react users.
             </p>
             <div className="flex justify-center">
               <Link href="/getting-started/installation">
-                <button className="inline-flex shadow-md text-white bg-primary border-0 py-2 px-6 focus:outline-none transition-colors duration-200 ease-in-out hover:bg-primary-lighter rounded text-lg">
+                <button
+                  role="button"
+                  className="inline-flex shadow-md text-white bg-primary border-0 py-2 px-6 focus:outline-none transition-colors duration-200 ease-in-out hover:bg-primary-lighter rounded text-lg"
+                >
                   Get Started
                 </button>
               </Link>
